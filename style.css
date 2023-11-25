@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141519;
+    font-family: 'Overpass', sans-serif;
+}
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
+
+main{
+    color: white;
+    width: 415px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #2c343f;
+}
+
+#starContainer{
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    background-color: #1f262e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rating h1{
+    margin: 35px 0 20px 0;
+}
+#rating p{
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    width: 85%;
+}
+#rating ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#rating li{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.ratingItem{
+    background-color: #1f262e;
+}
+.ratingItem:hover{
+    background-color: hsl(216, 12%, 54%);
+}
+.selected{
+    background-color: hsl(25, 97%, 53%);
+}
+.selected:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+button{
+    border: none;
+    border-radius: 25px;
+    display: block;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#thankYou{
+    text-align: center;
+}
+#thankYou img{
+    display: block;
+    margin: auto;
+}
+#result{
+    border-radius: 25px;
+    background-color: #1f262e;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    width: 190px;
+    margin: 30px auto 35px auto;
+    padding: 12px 0;
+}
+#appreciation{
+    width: 95%;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+footer a{
+    padding: 15px;
+    color: hsl(25, 97%, 53%);
+    text-decoration: none;
+}
+
+@media(max-width:768px){
+    main{
+        width: 90%;
+        padding: 15px;
+    }
+    #rating p{
+        width: 100%;
+        font-size: 14px;
+    }
+    #rating li{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
